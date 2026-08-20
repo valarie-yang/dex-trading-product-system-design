@@ -66,7 +66,8 @@ The underlying product documentation includes market analysis, user segmentation
 - [`docs/risk-controls.md`](docs/risk-controls.md) — pre-trade and execution risk surfaces
 - [`docs/product-metrics.md`](docs/product-metrics.md) — proposed product metrics
 - [`specs/quote-api-example.md`](specs/quote-api-example.md) — example product/API contract
+- [`supporting/trading-automation-and-decision-support.md`](supporting/trading-automation-and-decision-support.md) — supporting Trading Bot → AI decision-support study
 
 ## Portfolio connection
 
-This repository supports applications for DEX, on-chain trading, wallet trading, exchange trading-systems and institutional trading product roles. The visual case study is maintained separately in Figma.
+This repository supports applications for DEX, on-chain trading, wallet trading, exchange trading-systems and institutional trading product roles. The supporting automation study shows how the same product foundation can extend toward AI-assisted trading and decision support. The visual case study is maintained separately in Figma.
