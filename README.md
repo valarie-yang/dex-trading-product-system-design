@@ -58,14 +58,14 @@ Settlement + portfolio update
 
 The underlying product documentation includes market analysis, user segmentation, competitor analysis, AMM/CLOB design, liquidity-pool concepts, risk-control concepts and KPI planning.
 
-## Planned repository map
+## Repository map
 
-- `docs/product-strategy.md`
-- `docs/quote-and-execution-lifecycle.md`
-- `docs/order-state-model.md`
-- `docs/risk-controls.md`
-- `docs/product-metrics.md`
-- `specs/quote-api-example.md`
+- [`docs/product-strategy.md`](docs/product-strategy.md) — users, scope and product principles
+- [`docs/quote-lifecycle.md`](docs/quote-lifecycle.md) — quote generation and expiry logic
+- [`docs/order-state-model.md`](docs/order-state-model.md) — Market / Limit order states
+- [`docs/risk-controls.md`](docs/risk-controls.md) — pre-trade and execution risk surfaces
+- [`docs/product-metrics.md`](docs/product-metrics.md) — proposed product metrics
+- [`specs/quote-api-example.md`](specs/quote-api-example.md) — example product/API contract
 
 ## Portfolio connection
 
