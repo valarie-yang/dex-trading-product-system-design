@@ -8,9 +8,15 @@ A product case study for a unified self-custodial trading experience combining A
 
 > This is a portfolio reconstruction based on product design work and synthetic examples. It contains no confidential company data and is not presented as a live production deployment.
 
+## My role and scope
+
+**PM scope represented in this case:** requirements, user journeys, quote/order product rules, interface-field definitions, state/exception design, risk UX, metrics, testing and UAT collaboration.
+
+**Implementation boundary:** this case does not claim ownership of matching-engine implementation, market making, smart-contract engineering, routing algorithms or exchange risk-engine code.
+
 ## Product problem
 
-DEX users often trade across fragmented venues and interfaces, balancing simplicity, liquidity depth, execution quality, self-custody and transparency. This case explores how a single product can serve retail users and more advanced traders without collapsing those requirements into one overly complex interface.
+DEX users often trade across fragmented venues and interfaces, balancing simplicity, liquidity depth, execution quality, self-custody and transparency. This case explores how one product experience can support both quote-based swaps and order-based trading without pretending they are the same execution model.
 
 ## Product scope
 
@@ -46,17 +52,19 @@ Partial fill / filled / cancelled / failed
 Settlement + portfolio update
 ```
 
+## Key product trade-offs
+
+1. **Simple vs. professional UX** — progressive disclosure reduces cognitive load without removing controls advanced users need.
+2. **Quote certainty vs. freshness** — longer quote validity improves completion but increases stale-price / execution risk; expiry must be visible and actionable.
+3. **Execution quality vs. transaction cost** — lowest displayed price is not automatically the best route once gas, price impact, liquidity and failure probability are considered.
+4. **One trading surface vs. truthful mental models** — AMM swaps and resting limit orders can share navigation, but their state models and execution expectations should remain distinct.
+
 ## Product decisions highlighted
 
-1. **Simple vs. professional trading modes** — progressive disclosure rather than one dense interface.
-2. **AMM + CLOB mental model** — distinguish quote-based swaps from resting orders and matching behavior.
-3. **Execution quality as a product surface** — users need clear trade-offs among price, gas, slippage, liquidity and success probability.
-4. **Risk transparency** — liquidation, price deviation, stale quotes and insufficient collateral should be understandable before irreversible actions.
-5. **Stateful trading UX** — order creation is only the start; pending, partial, cancelled, rejected and failed states all require explicit product treatment.
-
-## Evidence sources used for this reconstruction
-
-The underlying product documentation includes market analysis, user segmentation, competitor analysis, AMM/CLOB design, liquidity-pool concepts, risk-control concepts and KPI planning.
+- Distinguish quote-based swaps from resting orders and matching behavior.
+- Treat execution quality as a product surface, not only a backend concern.
+- Expose liquidation, stale quotes, insufficient collateral and other material risk states before irreversible actions.
+- Design for pending, partial, cancelled, rejected and failed outcomes instead of treating submission as completion.
 
 ## Repository map
 
@@ -65,9 +73,10 @@ The underlying product documentation includes market analysis, user segmentation
 - [`docs/order-state-model.md`](docs/order-state-model.md) — Market / Limit order states
 - [`docs/risk-controls.md`](docs/risk-controls.md) — pre-trade and execution risk surfaces
 - [`docs/product-metrics.md`](docs/product-metrics.md) — proposed product metrics
-- [`specs/quote-api-example.md`](specs/quote-api-example.md) — example product/API contract
-- [`supporting/trading-automation-and-decision-support.md`](supporting/trading-automation-and-decision-support.md) — supporting Trading Bot → AI decision-support study
+- [`specs/quote-api-example.md`](specs/quote-api-example.md) — example quote contract
+- [`specs/order-transition-rules.md`](specs/order-transition-rules.md) — transition rules and invalid transitions
+- [`supporting/trading-automation-and-decision-support.md`](supporting/trading-automation-and-decision-support.md) — Trading Bot → AI decision-support study
 
 ## Portfolio connection
 
-This repository supports applications for DEX, on-chain trading, wallet trading, exchange trading-systems and institutional trading product roles. The supporting automation study shows how the same product foundation can extend toward AI-assisted trading and decision support. The visual case study is maintained separately in Figma.
+This is a flagship case for DEX, on-chain trading, wallet trading, exchange trading-systems and institutional trading product roles. The supporting automation study extends the same product foundation toward AI-assisted trading and decision support.
