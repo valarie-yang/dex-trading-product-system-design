@@ -6,6 +6,9 @@ A product case study for a unified self-custodial trading experience combining A
 **Focus:** DEX · AMM · CLOB · Spot / Perpetual Trading · Risk · Product Metrics  
 **Artifacts:** Product strategy · Trade flows · State models · Risk controls · API/product logic
 
+**Portfolio:** [Valarie Yang — Product Portfolio](https://www.figma.com/design/pIUP2RYiUR3fpGoKHjRGnU/Valarie-Yang-%E2%80%94-Product-Portfolio?node-id=0-1)  
+**Profile:** [LinkedIn](https://www.linkedin.com/in/valarie-yang-08573b122/) · [GitHub](https://github.com/valarie-yang)
+
 > This is a portfolio reconstruction based on product design work and synthetic examples. It contains no confidential company data and is not presented as a live production deployment.
 
 ## My role and scope
