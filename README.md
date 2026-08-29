@@ -92,7 +92,7 @@ The AI layer may not:
 - calculate authoritative balances, fees, slippage, or price impact from free-form text;
 - provide personalized buy/sell/allocation advice or imply guaranteed returns.
 
-All material actions require explicit user review and the existing wallet confirmation boundary.
+This repository does not implement signing, broadcasting, or fund transfer. Any future high-impact action would require explicit user review and a separate wallet-confirmation flow outside this portfolio case.
 
 ## Product decisions highlighted
 
