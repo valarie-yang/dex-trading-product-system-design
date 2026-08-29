@@ -6,9 +6,9 @@ A supporting AI layer for DEX trading workflows, focused on explainability, risk
 
 It is not an AI trading bot, autonomous trading agent, investment adviser, portfolio manager, or profit-prediction system.
 
-## Example interaction
+## Proposed interaction
 
-A user asks why a strategy condition was triggered. The system retrieves a quote and portfolio snapshot, applies deterministic rules, shows the relevant risk flags and evidence, and asks the user to review the result. The model may explain the result in plain language; it does not create a binding trade instruction.
+In a proposed implementation, the system would retrieve a quote and portfolio snapshot, apply deterministic rules, show risk flags and evidence, and ask the user to review the result. The model would be used to explain the result in plain language; it would not create a binding trade instruction.
 
 ## Example response shape
 
@@ -28,6 +28,10 @@ A user asks why a strategy condition was triggered. The system retrieves a quote
 - no guaranteed-return or “optimal strategy” language;
 - explicit stale-data and missing-data disclosure;
 - user confirmation before any high-impact action.
+
+## Wallet boundary
+
+The design assumes a separate wallet-confirmation flow; this repository does not implement signing, broadcasting, or fund transfer.
 
 ## Portfolio status
 
