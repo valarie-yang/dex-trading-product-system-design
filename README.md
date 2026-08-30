@@ -8,6 +8,18 @@ A portfolio case study for a unified self-custodial trading experience combining
 **Status:** Product/system design case with synthetic examples; not a live production exchange  
 
 ![DEX product lifecycle](assets/portfolio-signal.svg)
+
+## Case evidence: role / inputs / outputs / result / boundary
+
+| | Portfolio proof |
+|---|---|
+| **My role** | Owned the AMM/order-book product strategy, quote and order lifecycle, risk-preview fields, failure states, metrics and AI decision-support boundary. |
+| **Inputs** | Pair, wallet/balance state, quote, gas, slippage, price impact, allowance, expiry and order parameters. |
+| **AI + system work** | Rules calculate execution facts and risk flags; AI explains those deterministic results and compares synthetic scenarios. |
+| **Outputs** | Trading preview, signature/pending/fill/failure state, risk warning, recovery action and reviewable explanation. |
+| **Result** | A public product/system design case with lifecycle specs, quote API example, risk controls and AI evaluation gates. |
+| **Boundary** | No private-key access, signing, broadcasting, automatic execution, production matching engine, market making or investment advice is claimed. |
+
 **Portfolio:** [Valarie Yang — Product Portfolio](https://www.figma.com/design/pIUP2RYiUR3fpGoKHjRGnU/Valarie-Yang-%E2%80%94-Product-Portfolio?node-id=0-1)  
 **Profile:** [LinkedIn](https://www.linkedin.com/in/valarie-yang-08573b122/) · [GitHub](https://github.com/valarie-yang)
 
