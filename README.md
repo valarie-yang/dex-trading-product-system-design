@@ -112,10 +112,12 @@ This repository does not implement signing, broadcasting, or fund transfer. Any 
 - [docs/product-metrics.md](docs/product-metrics.md) — proposed product metrics
 - [docs/ai-decision-support-boundary.md](docs/ai-decision-support-boundary.md) — AI scope, safety, and non-execution boundary
 - [docs/ai-decision-support-evaluation.md](docs/ai-decision-support-evaluation.md) — synthetic evaluation and demo gates
+- [docs/portfolio-evidence-index.md](docs/portfolio-evidence-index.md) — recruiter reading path and evidence status
 - [specs/quote-api-example.md](specs/quote-api-example.md) — example quote contract
 - [specs/order-transition-rules.md](specs/order-transition-rules.md) — transition rules and invalid transitions
 - [supporting/trading-automation-and-decision-support.md](supporting/trading-automation-and-decision-support.md) — strategy automation concept
 - [supporting/ai-assisted-trading-decision-support.md](supporting/ai-assisted-trading-decision-support.md) — AI explanation and scenario-comparison case
+- [THIRD-PARTY-NOTICES.md](THIRD-PARTY-NOTICES.md) — protocol reference and asset boundary
 
 ## Portfolio connection
 
