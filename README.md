@@ -6,6 +6,8 @@ A portfolio case study for a unified self-custodial trading experience combining
 **Product area:** DEX · AMM · CLOB · Spot / Perpetual Trading · Risk · Product Metrics  
 **Artifacts:** Product strategy · Trade flows · Quote lifecycle · Order states · Risk controls · PM-level API logic  
 **Status:** Product/system design case with synthetic examples; not a live production exchange  
+
+![DEX product lifecycle](assets/portfolio-signal.svg)
 **Portfolio:** [Valarie Yang — Product Portfolio](https://www.figma.com/design/pIUP2RYiUR3fpGoKHjRGnU/Valarie-Yang-%E2%80%94-Product-Portfolio?node-id=0-1)  
 **Profile:** [LinkedIn](https://www.linkedin.com/in/valarie-yang-08573b122/) · [GitHub](https://github.com/valarie-yang)
 
