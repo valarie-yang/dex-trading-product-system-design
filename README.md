@@ -9,6 +9,22 @@ A portfolio case study for a unified self-custodial trading experience combining
 
 ![DEX product lifecycle](assets/portfolio-signal.svg)
 
+![Detailed evidence preview](assets/evidence-overview.svg)
+
+
+## Quick start and verification
+
+1. Open the [detailed evidence preview](assets/evidence-overview.svg) to see quote, risk preview, user signing and settlement-state surfaces.
+2. Follow the [portfolio evidence index](docs/portfolio-evidence-index.md).
+3. Review [quote lifecycle](docs/quote-lifecycle.md), [order state model](docs/order-state-model.md), [risk controls](docs/risk-controls.md), and the [AI decision-support evaluation](docs/ai-decision-support-evaluation.md).
+
+**Public runtime:** Documentation-first product/system design case. No live exchange or trading application is included.
+
+**Test command:** `N/A — no public application test suite is claimed.` The valid verification path is the linked state/spec review and synthetic scenario inspection.
+
+**Evidence level:** `public-safe reconstruction` · `synthetic examples` · `PRD/system design`; not production trading, execution or investment advice.
+
+The AI-assisted Trading Decision Support material is a read-only, explainable supporting layer; it does not sign, broadcast or execute transactions.
 ## Case evidence: role / inputs / outputs / result / boundary
 
 | | Portfolio proof |
